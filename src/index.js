@@ -7,7 +7,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <TonConnectUIProvider manifestUrl='https://ton-connect-sample.vercel.app/tonconnect-manifest.json'>
+  <TonConnectUIProvider manifestUrl='https://hack-a-ton-connect.vercel.app/tonconnect-manifest.json'>
     <App />
   </TonConnectUIProvider>
 

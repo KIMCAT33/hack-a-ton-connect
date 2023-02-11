@@ -4,6 +4,7 @@ import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 
 function App() {
   const wallet = useTonWallet();
+  console.log(wallet);
   return (
     <div className="App">
       <header className="App-header">
@@ -11,8 +12,7 @@ function App() {
         <TonConnectButton />
         {wallet && (
           <div>
-            <span>Connected wallet: {wallet}</span>
-            <span>Device: {wallet.device.appName}</span>
+          
           </div>
         )}
       </header>

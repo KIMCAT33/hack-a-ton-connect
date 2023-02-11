@@ -1,22 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 
 function App() {
+  const wallet = useTonWallet();
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <span>My Ton Connect App With React UI</span>
+        <TonConnectButton />
+        {wallet && (
+          <div>
+            <span>Connected wallet: {wallet.name}</span>
+            <span>Device: {wallet.device.appName}</span>
+          </div>
+        )}
       </header>
     </div>
   );

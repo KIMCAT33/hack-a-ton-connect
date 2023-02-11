@@ -4,7 +4,6 @@ import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 
 function App() {
   const wallet = useTonWallet();
-  
   return (
     <div className="App">
       <header className="App-header">

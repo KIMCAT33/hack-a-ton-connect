@@ -1,7 +1,17 @@
 {
-    "url": "https://app.tonkeeper.com/ton-connect",
     "name": "Tonkeeper",
-    "iconUrl": "https://tonkeeper.com/assets/tonconnect-icon.png",
-    "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp/terms-of-use.txt",
-    "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp/privacy-policy.txt"
-}
+    "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
+    "tondns":  "tonkeeper.ton",
+    "about_url": "https://tonkeeper.com",
+    "universal_url": "https://app.tonkeeper.com/ton-connect",
+    "bridge": [ 
+       {
+          "type": "sse",
+          "url": "https://bridge.tonapi.io/bridge"
+       },
+       {
+          "type": "js",
+          "key": "tonkeeper"
+       }
+    ],
+  }
